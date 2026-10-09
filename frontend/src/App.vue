@@ -77,7 +77,7 @@
       direction: formData?.direction,
     };
     saveAlert(body);
-    if ((state.alertSaved = true)) {
+    if (state.alertSaved) {
       Object.assign(formData, initialFormState);
       state.alertSaved = false;
     }
